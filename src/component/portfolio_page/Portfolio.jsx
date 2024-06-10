@@ -45,6 +45,7 @@ export const Portfolio = () => {
   </div>
   <div className='skills_grid_container'>
     <div className="skills_content">
+    <img src="" alt="" />
       <h2>Javascript</h2>
     </div>
     <div className="skills_content">
