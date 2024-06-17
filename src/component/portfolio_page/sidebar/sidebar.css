@@ -1,0 +1,15 @@
+.side_bar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color:black;
+    color: var(--white-color);
+    display: grid;
+    grid-column: 1 / span 1;
+    height: 100vh;
+}
+li{
+    height: 40px;
+    background-color: antiquewhite;
+    margin: 1rem;
+}

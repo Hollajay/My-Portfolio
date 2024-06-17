@@ -1,0 +1,157 @@
+/* General Styles for Trapdoor Elements */
+.trapdoor, .trapdoor2, .trapdoor3, .trapdoor4, .trapdoor5 {
+  -webkit-transform: translateZ(0px);
+  -webkit-font-smoothing: antialiased;
+  margin-left: 50px;
+  margin-top: 25px;
+  width: 90px;
+  height: 50px;
+  background: transparent;
+  opacity: 1;
+  transition: background 400ms ease-in-out;
+}
+
+/* Hover Effects for Trapdoor Elements */
+.trapdoor:hover, .trapdoor2:hover, .trapdoor3:hover, .trapdoor4:hover, .trapdoor5:hover {
+  background: transparent;
+  opacity: 1;
+  width: 90px;
+}
+
+.trapdoor:hover .door, .trapdoor2:hover .door2, .trapdoor3:hover .door3, .trapdoor4:hover .door4, .trapdoor5:hover .door5 {
+  transform: scale(1.08);
+}
+
+.trapdoor:hover .top, .trapdoor2:hover .top2, .trapdoor3:hover .top3, .trapdoor4:hover .top4, .trapdoor5:hover .top5 {
+  top: -50%;
+}
+
+.trapdoor:hover .bottom, .trapdoor2:hover .bottom2, .trapdoor3:hover .bottom3, .trapdoor4:hover .bottom4, .trapdoor5:hover .bottom5 {
+  top: 100%;
+}
+
+/* Anchor Styles */
+.trapdoor .anchor, .trapdoor2 .anchor2, .trapdoor3 .anchor3, .trapdoor4 .anchor4, .trapdoor5 .anchor5 {
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  margin-top: -23px;
+  margin-left: -50px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+}
+
+.anchor:hover, .anchor2:hover, .anchor3:hover, .anchor4:hover, .anchor5:hover {
+  color: var(--beauty-color);
+}
+
+/* Top and Bottom Elements */
+.top, .top2, .top3, .top4, .top5 {
+  top: 0%;
+  left: 0px;
+}
+
+.top:before, .top2:before, .top3:before, .top4:before, .top5:before {
+  top: 5px;
+}
+
+.bottom, .bottom2, .bottom3, .bottom4, .bottom5 {
+  top: 50%;
+  left: 0px;
+}
+
+.bottom:before, .bottom2:before, .bottom3:before, .bottom4:before, .bottom5:before {
+  top: -20px;
+}
+
+/* Door Styles */
+.door, .door2, .door3, .door4, .door5 {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+  z-index: 2;
+  transition: top 400ms, box-shadow 200ms, transform 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+.door:before {
+  font-family: 'icomoon', sans-serif;
+  position: absolute;
+  left: 52%;
+  margin-left: -20px;
+  font-size: 25px;
+  color: white;
+  content: "\ea92";
+  width: 0px;
+  height: 20px;
+  background-color: transparent;
+}
+
+.door2:before {
+  font-family: 'icomoon', sans-serif;
+  position: absolute;
+  left: 52%;
+  margin-left: -20px;
+  font-size: 25px;
+  color: white;
+  content: "\eab0";
+  width: 0px;
+  height: 20px;
+  background-color: transparent;
+}
+
+.door3:before {
+  font-family: 'icomoon', sans-serif;
+  position: absolute;
+  left: 52%;
+  margin-left: -20px;
+  font-size: 25px;
+  color: white;
+  content: "\ea86";
+  width: 0px;
+  height: 20px;
+  background-color: transparent;
+}
+
+.door4:before {
+  font-family: 'icomoon', sans-serif;
+  position: absolute;
+  left: 52%;
+  margin-left: -20px;
+  font-size: 25px;
+  color: white;
+  content: "\ea93";
+  width: 0px;
+  height: 20px;
+  background-color: transparent;
+}
+
+.door5:before {
+  font-family: 'icomoon', sans-serif;
+  position: absolute;
+  left: 52%;
+  margin-left: -20px;
+  font-size: 25px;
+  color: white;
+  content: "\eac9";
+  width: 0px;
+  height: 20px;
+  background-color: transparent;
+}
+.door1:hover:before,.door2:hover:before,.door3:hover:before,.door4:hover:before,.door5:hover:before{
+   color: var(--primary-color);
+}
+
+/* Font-face Definitions */
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}

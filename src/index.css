@@ -1,15 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Oleo+Script:wght@400;700&display=swap');
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-weight: 300;
+  font-family: "Oleo Script", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 :root{
-  --dark-color:rgb(10, 10, 10);
-  --primary-color:blue;
-  --light-color:aliceblue;
+  --dark-color:#0C1844;
+  --primary-color:#C80036;
+  --secondary-color:#C73659;
+  --light-color:#376E6F;
   --white-color:white;
+  --beauty-color:#FFF5E1;
+
+
+ 
 }
 a{
   text-decoration: none;
