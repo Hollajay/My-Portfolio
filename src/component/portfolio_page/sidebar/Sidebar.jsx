@@ -1,15 +1,28 @@
+
+import { NavLink } from 'react-router-dom'
 import './sidebar.css'
 
 export const Sidebar = () => {
   return (
-    <div className='side_bar'>
-      <ul>
-        <li>home </li>
-        <li>about </li>
-        <li>contact</li>
-        <li>project</li>
-        <li>location</li>
-      </ul>
-    </div>
+    <div className="sidebar">
+    <ul>
+      <li className='homeList'>
+        <NavLink to="/#homePage" className={({ isActive }) => (isActive ? "active  " : "")}>Home</NavLink>
+      </li>
+      <li className='aboutList'>
+        <NavLink to="/#aboutPage" className={({ isActive }) => (isActive ? "active" : "")}>About</NavLink>
+      </li>
+      <li className='skillsList'>
+        <NavLink to="/#skillsPage" className={({ isActive }) => (isActive ? "active" : "")}>Skills</NavLink>
+      </li>
+      <li className='projectsList'>
+        <NavLink to="/#projectsPage" className={({ isActive }) => (isActive ? "active" : "")}>Projects</NavLink>
+      </li>
+      <li className='contactList'>
+       
+        <NavLink to="/#contactPage" className={({ isActive }) => (isActive ? "active" : "")}>Contact</NavLink>
+      </li>
+    </ul>
+  </div>
   )
 }

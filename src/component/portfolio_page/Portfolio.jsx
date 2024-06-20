@@ -1,36 +1,146 @@
 import './portfolio.css'
 import { FaRegCopyright } from "react-icons/fa";
 import '../../assets/images/download__1_-removebg-preview (1).png'
-import { Sidebar } from './sidebar/Sidebar';
 import { TypeAnimation } from 'react-type-animation';
 import { Icon } from '../social_icon/Icon';
 
+import { useEffect, useRef, useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import { scroller } from 'react-scroll';
+
+
 
 export const Portfolio = () => {
+  const [activeLink, setActiveLink] = useState('');
 
-//   const socialIcons = [
-//     { iconUrl: 'https://twitter.com/twholman' },
-//     { iconUrl: 'https://twitter.com/twholman' },
-//     { iconUrl: 'https://shutterstock.sa7eer.com/r/d/sstk?id1=search-top&id2=6229b513-f510-45d1-a23d-f0ac090b0be9&id3=b8c609da-4ebe-4b02-bd2e-cb9f45bdb8ed&u=https%3A%2F%2Fshutterstock.7eer.net%2Fc%2F38919%2F1636534%2F1305%3Fsharedid%3Dwww.vecteezy.com%26subId1%3Dsearch-top%26subId2%3D6229b513-f510-45d1-a23d-f0ac090b0be9%26subId3%3Db8c609da-4ebe-4b02-bd2e-cb9f45bdb8ed%26u%3Dhttps%253A%252F%252Fwww.shutterstock.com%252Fimage-photo%252Fcamera-icon-photo-frame-on-white-1779908711' },
-//     { iconUrl: 'https://twitter.com/twholman' },
-//   ];
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const skillsRef = useRef(null);
+  const projectsRef = useRef(null);
+  const hireRef = useRef(null);
+  const contactRef = useRef(null);
 
-//   const fontFaceStyle = `
-//   @font-face {
-//     font-family: 'tweet';
-//     src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/277/tweet.woff") format("woff");
-//     font-weight: normal;
-//     font-style: normal;
-//   }
-// `;
+  useEffect(() => {
+   
 
+
+
+
+
+
+
+
+    const handleScroll = () => {
+      const sections = [
+        { id: 'homePage', ref: homeRef, offset: 0  },
+        { id: 'aboutPage', ref: aboutRef, offset: 0  },
+        { id: 'skillsPage', ref: skillsRef, offset: 0  },
+        { id: 'projectsPage', ref: projectsRef, offset: 0  },
+        { id: 'hireMe', ref: hireRef, offset: 0  },
+        { id: 'contactPage', ref: contactRef, offset:-100  }
+      ];
+
+      let currentSection = '';
+      sections.forEach(section => {
+        const element = section.ref.current;
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= 50 && rect.bottom >= 50) {
+            currentSection = section.id;
+          }
+        }
+      });
+
+      setActiveLink(currentSection);
+    };
+
+    // Initial check
+    handleScroll();
+
+    // Attach scroll listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up on unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollToSection = (id) => {
+    setActiveLink(id);
+    scroller.scrollTo(id, {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart'
+    });
+  };
 
 
   return (
   <div className='Container'>
-    <Sidebar/>
+        <div className="sidebar">
+        <ul>
+             <li className='homeList'>
+            
+            <NavLink
+              to="/#homePage"
+              className={activeLink === 'homePage' ? "Onactive" : "navlink"}
+              onClick={() => scrollToSection('homePage')}
+            >
+              Home
+            </NavLink>
+           
+          </li>
+          <li className='aboutList'>
+            <NavLink
+              to="/#aboutPage"
+              className={activeLink === 'aboutPage' ? "Onactive" : ""}
+              onClick={() => scrollToSection('aboutPage')}
+            >
+              About
+            </NavLink>
+          </li>
+          <li className='skillsList'>
+            <NavLink
+              to="/#skillsPage"
+              className={activeLink === 'skillsPage' ? "Onactive" : ""}
+              onClick={() => scrollToSection('skillsPage')}
+            >
+              Skills
+            </NavLink>
+          </li>
+          <li className='projectsList'>
+            <NavLink
+              to="/#projectsPage"
+              className={activeLink === 'projectsPage' ? "Onactive" : ""}
+              onClick={() => scrollToSection('projectsPage')}
+            >
+              Projects
+            </NavLink>
+          </li>
+          <li className='hireList'>
+            <NavLink
+              to="/#hireMe"
+              className={activeLink === 'hireMe' ? "Onactive" : ""}
+              onClick={() => scrollToSection('hireMe')}
+            >
+              Hire me
+            </NavLink>
+          </li>
+          
+          <li className='contactList'>
+            <NavLink
+              to="/#contactPage"
+              className={activeLink === 'contactPage' ? "Onactive" : ""}
+              onClick={() => scrollToSection('contactPage')}
+            >
+              Contact
+            </NavLink>
+          </li>
+        </ul>
+      </div>
 
-    <section className='Content_sect'>
+    <section className='Content_sect' id='homePage'  ref={homeRef}>
      <div className='home_div'>
        <div className='home_content'>
          {/* <h2 className='my_name_tag'>I am Ologunagba Olajide</h2> */}
@@ -55,14 +165,14 @@ export const Portfolio = () => {
         {/* {socialIcons.map((icon, index) => (
               <Icon key={index} iconUrl={icon.iconUrl} />
             ))} */}
-            <div className='socialIcon'><Icon/></div>
+            <div className='socialIcon'><hr /><Icon/><hr /></div>
             
        
        </div>
      </div>
                   
                    {/* about me  */}
-     <div className='aboutMe_container'>
+     <section className='aboutMe_container' id='aboutPage' ref={aboutRef}>
       <div className='left_about_grid'>
         <img src="https://images.unsplash.com/photo-1453396450673-3fe83d2db2c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG9ydGZvbGltZSUyMG1hbiUyMHBob3RvJTIwaW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="image" />
       </div>
@@ -74,10 +184,10 @@ export const Portfolio = () => {
         </div>
 
       </div>
-    </div>
+    </section>
 
                   {/* my skills */}
-<div className='mySkills_container'>
+<section className='mySkills_container' id='skillsPage' ref={skillsRef}>
   <div className='mySkills_header'>
     <img src="" alt="" />
     <h1>My skills</h1>
@@ -119,12 +229,12 @@ export const Portfolio = () => {
 
   </div>
 
-</div>
+</section>
 
 
     {/* my projects */}
 
-<div className='my_project'>
+<section className='my_project' id='projectsPage' ref={projectsRef}>
   <h1>My Project</h1>
   <div className='myProjectGrid'>
     <div className="myProjectDiv"><img src="https://media.istockphoto.com/id/931198580/photo/software-web-development-programming-code-on-black.jpg?s=612x612&w=0&k=20&c=ITmoBB18VB0qbDpMcc1GG1adj0Y3LsdpJ1uo8LN3k_c=" alt="" /></div>
@@ -134,10 +244,10 @@ export const Portfolio = () => {
     <div className="myProjectDiv"><img src="https://media.istockphoto.com/id/1226777500/photo/e-learning-education-concept.jpg?s=612x612&w=0&k=20&c=hxXNsfh5t2jcwBJ_6sa4FJzq-ZGtik0gowRFsM-WTUI=" alt="" /></div>
   </div>
 
-</div>
+</section>
 
       {/* insterested in me div */}
-<div className='insterested_div'>
+<div className='insterested_div' id='hireMe' ref={hireRef}>
   <h1>insterested i working with me ?</h1>
   <button>Hire me</button>
 </div>
@@ -145,7 +255,7 @@ export const Portfolio = () => {
 
      {/* Contact me div */}
 
-<div className='contactMe_div'>
+<div className='contactMe_div'  >
   <div className="contact_me">
   <h1>Address</h1>
   <address>no2 bodija road Ibadan ,Oyo state</address>
@@ -164,7 +274,7 @@ export const Portfolio = () => {
 
 
                    {/* Have any question section */}
- <div className='anyQuestion_div'>
+ <section className='anyQuestion_div' id='contactPage'  ref={contactRef}>
 
       <div className='map_div'>
         <iframe className='Map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126614.56223805038!2d3.822658372182909!3d7.386909894877332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398d77eeff086f%3A0x3b33e0f76e8e04a9!2sIbadan%2C%20Oyo!5e0!3m2!1sen!2sng!4v1710590542906!5m2!1sen!2sng"></iframe>
@@ -192,7 +302,7 @@ export const Portfolio = () => {
       </div>
   
       
-</div>
+</section>
 
 
     {/* footer */}

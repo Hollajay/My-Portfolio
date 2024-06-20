@@ -1,4 +1,4 @@
-.side_bar{
+.sidebar{
     position: sticky;
     top: 0;
     left: 0;
@@ -13,3 +13,10 @@ li{
     background-color: antiquewhite;
     margin: 1rem;
 }
+/* Add this to your CSS file */
+.active {
+    font-weight: bold;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+

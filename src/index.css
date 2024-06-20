@@ -8,6 +8,7 @@
   font-family: "Oleo Script", system-ui;
   font-weight: 400;
   font-style: normal;
+ 
 }
 :root{
   --dark-color:#0C1844;
@@ -22,4 +23,5 @@
 }
 a{
   text-decoration: none;
+
 }

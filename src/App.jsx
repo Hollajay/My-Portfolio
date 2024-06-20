@@ -1,18 +1,16 @@
 
-import { Portfolio } from "./component/portfolio_page/Portfolio"
+import {BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Portfolio } from './component/portfolio_page/Portfolio';
 
 
-
-function App() {
- 
-
+const App = () => {
   return (
-<>
-   <Portfolio/>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Portfolio />} />
+    </Routes>
+    </BrowserRouter>
+  );
+};
 
-   </> 
-   
-  )
-}
-
-export default App
+export default App;

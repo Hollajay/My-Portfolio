@@ -2,8 +2,8 @@
 .trapdoor, .trapdoor2, .trapdoor3, .trapdoor4, .trapdoor5 {
   -webkit-transform: translateZ(0px);
   -webkit-font-smoothing: antialiased;
-  margin-left: 50px;
-  margin-top: 25px;
+  margin-left: 0px;
+  margin-top: 18px;
   width: 90px;
   height: 50px;
   background: transparent;
@@ -83,9 +83,9 @@
   font-family: 'icomoon', sans-serif;
   position: absolute;
   left: 52%;
-  margin-left: -20px;
+  margin-left: -15px;
   font-size: 25px;
-  color: white;
+  color: silver;
   content: "\ea92";
   width: 0px;
   height: 20px;
@@ -96,9 +96,9 @@
   font-family: 'icomoon', sans-serif;
   position: absolute;
   left: 52%;
-  margin-left: -20px;
+  margin-left: -15px;
   font-size: 25px;
-  color: white;
+  color: silver;
   content: "\eab0";
   width: 0px;
   height: 20px;
@@ -109,9 +109,9 @@
   font-family: 'icomoon', sans-serif;
   position: absolute;
   left: 52%;
-  margin-left: -20px;
+  margin-left: -15px;
   font-size: 25px;
-  color: white;
+  color: silver;
   content: "\ea86";
   width: 0px;
   height: 20px;
@@ -122,9 +122,9 @@
   font-family: 'icomoon', sans-serif;
   position: absolute;
   left: 52%;
-  margin-left: -20px;
+  margin-left: -15px;
   font-size: 25px;
-  color: white;
+  color: silver;
   content: "\ea93";
   width: 0px;
   height: 20px;
@@ -135,15 +135,15 @@
   font-family: 'icomoon', sans-serif;
   position: absolute;
   left: 52%;
-  margin-left: -20px;
+  margin-left: -15px;
   font-size: 25px;
-  color: white;
+  color: silver;
   content: "\eac9";
   width: 0px;
   height: 20px;
   background-color: transparent;
 }
-.door1:hover:before,.door2:hover:before,.door3:hover:before,.door4:hover:before,.door5:hover:before{
+.door:hover:before,.door2:hover:before,.door3:hover:before,.door4:hover:before,.door5:hover:before{
    color: var(--primary-color);
 }
 
