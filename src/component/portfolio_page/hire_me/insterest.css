@@ -176,3 +176,184 @@
     }
   }
 
+@media screen and (max-width:770px){
+  .interested_div{
+    width: 100%;
+    height:350px;
+    margin: 3rem 0;
+  
+   background-size: cover;
+   background-repeat: no-repeat;
+ 
+}
+.button1 {
+    -webkit-tap-highlight-color: transparent;
+    appearance: none;
+    border-radius: 20px;
+    border: 2px solid black;
+    border: 0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    color: black;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 20px;
+    outline: none;
+    overflow: hidden;
+    padding: 1em 2em;
+    position: relative;
+    width: 100%;
+    height:350px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .button--white {
+    color: white;
+  }
+.bg4{
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/18/18/37/programming-1836330_1280.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.inner1 {
+    height: 500px;
+    width: 1600px;
+  
+  }
+  .text1 {
+    min-width: 1300px;
+      height: 600px;
+      position:absolute;
+      opacity: 1;
+      background-color: rgba(0,0,0,0.5);
+      color: var(--beauty-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+            /* contact me div */
+.contactMe_div{
+    width: 90%;
+    gap: 50px;
+   display: none;
+   grid-template-columns: 1fr 1fr 1fr;
+   margin: 3rem auto;
+
+}
+
+.button {
+    -webkit-tap-highlight-color: transparent;
+    appearance: none;
+    border-radius: 100px;
+    border: 2px solid black;
+    border: 0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    color: black;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 20px;
+    outline: none;
+    overflow: hidden;
+    padding: 1em 2em;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button--white {
+    color: white;
+  }
+  .pattern {
+    background: #f99;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+.bg1{
+    background-image: url(https://media.istockphoto.com/id/971578384/photo/night-sky-with-stars-and-soft-milky-way-universe-as-background-or-texture.webp?b=1&s=170667a&w=0&k=20&c=fClkTGdzR4UoSJcvOdwyGiXQhsLnDyyGZwlTXfQdxW8=);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+
+
+
+  .inner {
+    height: 600px;
+    width: 1000px;
+  
+  }
+
+
+  .text {
+  min-width: 300px;
+    height: 500px;
+    position: relative;
+    opacity: 1;
+    background-color: rgba(0,0,0,0.5);
+    color: var(--beauty-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .info_icon{
+    font-size: 40px;
+  }
+  .text:hover{
+    color: var(--primary-color);
+  }
+  .target {
+    transform: translate(var(--x), var(--y));
+  }
+  .button:active .target {
+    opacity: 0.7;
+    transition: opacity 100ms;
+  }
+  .pulse{
+    background: none;
+    border: 2px solid var(--beauty-color);
+    color: var(--primary-color);
+    width: 120px;
+    height: 40px;
+    border-radius: 1.3rem;
+    font-size: 20px;
+ 
+
+
+ 
+  }
+
+  .pulse:hover,
+  .pulse:focus {
+    -webkit-animation: pulse 1s;
+            animation: pulse 1s;
+    box-shadow: 0 0 0 2em transparent;
+    color: var(--beauty-color);
+    border: 2px solid var(--primary-color);
+  }
+  
+  @-webkit-keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 var(--primary-color);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 var(--primary-color);
+    }
+  }
+
+
+}

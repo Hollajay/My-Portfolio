@@ -90,4 +90,102 @@
        color: var(--secondary-color);
    
    }
+   @media screen and (max-width:770px){
+    .anyQuestion_div{
+        width: 100%;
+        display: block;
+        padding: 10px;
+        height: 130vh;
+        position: relative;
+       }
+       .map_div{
+          width: 100%;
+         height: 500px;   
+         position: absolute;
+         left: 0;
+         bottom: 0;
+       }
+       .Map{
+           width: 100%;
+           height: 100%;
+           border-radius: 2rem;
+           border: none;
+       }
+       .form_field{
+       padding: 20px;
+       background-color: white;
+       
+       height: 500px;
+       width: 90%;
+       margin: auto;
+       border-radius: 2rem;
+    position: relative;
+       }
+       .input_grid{
+           display: grid;
+           grid-template-columns: 50% 50%;
+       }
+       .input_div{
+           width: 80%;
+           height: 50px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           background-color: var(--dark-color);
+           margin: 1rem 0;
+           border-radius: 2rem;
+           
+       }
+       .input_div input{
+           width: 100%;
+           height: 100%;
+           border-radius: 2rem;
+           outline: none;
+           border: none;
+           background-color: transparent;
+           padding-left: 1rem;
+           font-size: 15px;
+           color: var(--secondary-color);
+       }
+       ::placeholder{
+           color: var(--secondary-color); 
+       }
+       .text_area_div{
+           width: 100%;
+           background-color: var(--dark-color);
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           border-radius: 2rem;
+       }
+       .text_area_div textarea{
+         width: 100%;  
+         height: 100%;
+         background-color: transparent;
+         resize: none;
+         border-radius: 2rem;
+         border: none;
+         padding: 1rem;
+         font-size: 15px;
+         outline: none;
+       }
+       .form_field button{
+           width: 200px;
+           height: 40px;
+           border-radius: 2rem;
+           border: none;
+           margin: 1rem 0;
+           background-color: var(--secondary-color);
+           color: var(--dark-color);
+       }
+       .footer-copyright{
+           width: 100%;
+           height: 100px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           color: var(--secondary-color);
+       
+       }
+   }
    

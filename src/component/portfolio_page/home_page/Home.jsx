@@ -1,6 +1,29 @@
 import { TypeAnimation } from "react-type-animation"
 import { Icon } from "../../social_icon/Icon"
 import './home.css'
+import styled from 'styled-components';
+
+const StyledTypeAnimation = styled.span`
+  font-size: 20px;
+  display: inline-block;
+  color: #FFF5E1;
+
+  @media (max-width: 1200px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 8px;
+  }
+`;
 
 
 export const Home = () => {
@@ -8,7 +31,7 @@ export const Home = () => {
   
      <section className='home_div'>
        <div className='home_content'>
-         {/* <h2 className='my_name_tag'>I am Ologunagba Olajide</h2> */}
+       <StyledTypeAnimation>
          <TypeAnimation
       sequence={[
         // Same substring at the start will only be typed out once, initially
@@ -24,6 +47,7 @@ export const Home = () => {
       style={{ fontSize: '3em', display: 'inline-block' ,color:"#FFF5E1"}}
       repeat={Infinity}
     />
+      </StyledTypeAnimation>
 
         <h1> A Web Developer</h1>
         {/* <button className='contact_btn'>contact me</button> */}

@@ -195,19 +195,17 @@ hr:hover{
       justify-content: center;
       align-items: left;
       flex-direction: column;
-      padding: 30px;
+      padding: 0px;
      font-size: 1rem;
   }
  
-  .index-module_type__E-SaG{
-    font-size: 30px;
-  }
+
   .home_content h1{
-      font-size: 30px;
+      font-size: 40px;
       color: var(--primary-color);
   }
-  .contact_btn{
-      width: 200px;
+  /* .contact_btn{
+      width: 100px;
       height: 60px;
       background-color: transparent;
       border: 2px solid var(--beauty-color);
@@ -219,7 +217,7 @@ hr:hover{
     border: none;
     background-color: var(--primary-color);
     color: var(--beauty-color);
-  }
+  } */
   hr{
       width: 70px;
       height: 2px;
@@ -250,10 +248,10 @@ hr:hover{
     }
     .btn--svg {
       position: relative;
-      height: 70px;
-      width: 190px;
+      height: 40px;
+      width: 120px;
       overflow: hidden;
-      border-radius: 30px;
+      border-radius: 10px;
     }
     .btn--svg:hover .btn--svg__circle circle {
       transform: scale(0);
@@ -347,4 +345,8 @@ hr:hover{
       transform-origin: 50% 50%;
   
     } 
+    .btn--svg__border{
+      width: 120px;
+      height: 40px;
+    }
   }
