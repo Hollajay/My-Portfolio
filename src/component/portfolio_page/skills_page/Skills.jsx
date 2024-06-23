@@ -1,14 +1,14 @@
-
+import './skills.css'
 
 export const Skills = () => {
   return (
     <section className='mySkills_container' id='skillsPage' >
     <div className='mySkills_header'>
-      <img src="" alt="" />
+  
       <h1>My skills</h1>
     </div>
     <div className='skills_grid_container'>
-      <div className="skills_content">
+      <div className="skills_content" data-back="Back" data-front="Front">
      <img src="https://static.vecteezy.com/system/resources/previews/027/127/463/original/javascript-logo-javascript-icon-transparent-free-png.png" alt="" />
    
         <h2>Javascript</h2>

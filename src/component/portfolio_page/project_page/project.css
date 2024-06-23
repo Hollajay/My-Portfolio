@@ -1,0 +1,89 @@
+.my_project{
+    width: 100%;
+    height: 100%;
+}
+.my_project h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+.myProjectGrid{
+    width: 90%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;    
+}
+.myProjectDiv{
+    
+    height: 300px;
+    
+}
+.myProjectDiv img{
+    width: 300px;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.item {
+    position: relative;
+ height: 300px;
+ border-radius: 1.5rem;
+
+    overflow-y: hidden;
+    box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.6);
+    width: 300px;
+    color: var(--primary-color);
+  }
+  .item h3 {
+    margin: 0;
+    display: block;
+    background-color:rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+  
+  }
+  .item a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .item a:hover ~ .item__overlay, .item a:focus ~ .item__overlay {
+    transform: translate3d(0, 0, 0);
+   color: var(--beauty-color);
+  }
+  
+   img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 1rem;
+  } 
+  
+  .item__overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    transition: transform 300ms;
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: translate3d(0, calc(100% - 3.5rem), 0);
+    color: var(--primary-color);
+  }
+  
+  .item__body {
+    flex-grow: 1;
+    padding: 1rem;
+  }
+  .item__body p {
+    margin: 0;
+  }
