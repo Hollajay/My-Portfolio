@@ -94,22 +94,20 @@
   }
   .my_project h1{
       text-align: center;
-      font-size: 30px;
+      font-size: 40px;
       font-weight: 400;
       color: var(--primary-color);
   }
   .myProjectGrid{
-      width: 90%;
+      width: 80%;
       margin: 2rem auto;
       display: grid;
       grid-template-columns: 1fr ;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
       gap: 20px;    
   }
-  .myProjectDiv{
-      
-      height: 300px;
-      
+  .myProjectDiv{   
+      height: 300px;   
   }
   .myProjectDiv img{
       width: 300px;
