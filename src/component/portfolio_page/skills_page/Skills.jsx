@@ -9,32 +9,32 @@ export const Skills = () => {
     </div>
     <div className='skills_grid_container'>
       <div className="skills_content" data-back="Back" data-front="Front">
-     <img src="https://static.vecteezy.com/system/resources/previews/027/127/463/original/javascript-logo-javascript-icon-transparent-free-png.png" alt="" />
+     <img src="https://static.vecteezy.com/system/resources/previews/027/127/463/original/javascript-logo-javascript-icon-transparent-free-png.png" alt="image" />
    
         <h2>Javascript</h2>
       </div>
       <div className="skills_content">
-        <img src="https://sass-lang.com/assets/img/logos/logo.svg" alt="" />
+        <img src="https://sass-lang.com/assets/img/logos/logo.svg" alt="image" />
         <h2>Css & sass</h2>
       </div>
       <div className="skills_content">
-        <img src="src/assets/images/download-removebg-preview.png" alt="" />
+        <img src="src/assets/images/download-removebg-preview.png" alt="image" />
         <h2>React Js</h2>
       </div>
       <div className="skills_content">
-        <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="" />
+        <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="image" />
         <h2>Bootstrap</h2>
       </div>
       <div className="skills_content">
-        <img src="src/assets/images/download__1_-removebg-preview.png" alt="" />
+        <img src="src/assets/images/download__1_-removebg-preview.png" alt="image" />
         <h2>Tailwind css</h2>
       </div>
       <div className="skills_content">
-        <img src="src/assets/images/download__4_-removebg-preview.png" alt="" />
+        <img src="src/assets/images/download__4_-removebg-preview.png" alt="image" />
         <h2>PHP</h2>
       </div>
       <div className="skills_content">
-        <img src="src/assets/images/download__3_-removebg-preview.png" alt="" />
+        <img src="src/assets/images/download__3_-removebg-preview.png" alt="image" />
         <h2>laravel</h2>
       </div>
       <div className="skills_content">

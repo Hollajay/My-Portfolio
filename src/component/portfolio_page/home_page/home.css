@@ -73,9 +73,9 @@ hr:hover{
   z-index: 99;
 }
 .btn {
-    font-size: 1em;
-    line-height: 1em;
-    letter-spacing: 0.04em;
+    font-size: 1rem;
+    line-height: 1rem;
+    letter-spacing: 0.04rem;
     display: inline-block;
   }
   .btn--svg {
