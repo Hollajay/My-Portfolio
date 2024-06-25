@@ -11,7 +11,7 @@ export const Project = () => {
   <div className="item">
     <a href="#0" aria-labelledby="person1"></a>
     <img 
-      src="https://media.istockphoto.com/id/1447033251/photo/presentation-on-display-laptop-with-notebook-and-glasses-on-table-in-meeting-room.jpg?s=612x612&w=0&k=20&c=Y-AP8IU7FacBME2M20E2RR3oApoREbvMeUFJZSvi76M=" 
+      src="https://i.postimg.cc/zBsnj9KV/Screenshot-272.png" 
       alt="Presentation on display laptop" 
     />
     <Link  to="https://crpto-ten.vercel.app/"  className="item__overlay">

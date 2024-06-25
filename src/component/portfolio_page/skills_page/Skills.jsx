@@ -18,7 +18,7 @@ export const Skills = () => {
         <h2>Css & sass</h2>
       </div>
       <div className="skills_content">
-        <img src="https://files.fm/u/9vy5yyfv7v" alt="image" />
+        <img src="https://i.postimg.cc/mkT7J7ps/download-removebg-preview.png" alt="image" />
         <h2>React Js</h2>
       </div>
       <div className="skills_content">
@@ -26,19 +26,19 @@ export const Skills = () => {
         <h2>Bootstrap</h2>
       </div>
       <div className="skills_content">
-        <img src="src/assets/images/download__1_-removebg-preview.png" alt="image" />
+        <img src="https://i.postimg.cc/9QcF9JRV/download-1-removebg-preview.png" alt="image" />
         <h2>Tailwind css</h2>
       </div>
       <div className="skills_content">
-        <img src="src/assets/images/download__4_-removebg-preview.png" alt="image" />
+        <img src="https://i.postimg.cc/qRwNtSwP/download-4-removebg-preview.png" alt="image" />
         <h2>PHP</h2>
       </div>
       <div className="skills_content">
-        <img src="src/assets/images/download__3_-removebg-preview.png" alt="image" />
+        <img src="https://i.postimg.cc/8CP52tNw/download-3-removebg-preview.png" alt="image" />
         <h2>laravel</h2>
       </div>
       <div className="skills_content">
-      <img src="src/assets/images/logomark-orange_2x-removebg-preview.png" alt="image" />
+      <img src="https://i.postimg.cc/g0SJm80p/logomark-orange-2x-removebg-preview.png" alt="image" />
         <h2>git</h2>
       </div>
   

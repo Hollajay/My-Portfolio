@@ -1,6 +1,6 @@
 import './portfolio.css'
 import { FaRegCopyright } from "react-icons/fa";
-import '../../assets/images/download__1_-removebg-preview (1).png'
+
 
 
 import { useEffect, useRef, useState } from 'react';
