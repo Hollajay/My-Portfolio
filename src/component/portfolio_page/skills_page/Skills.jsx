@@ -18,7 +18,7 @@ export const Skills = () => {
         <h2>Css & sass</h2>
       </div>
       <div className="skills_content">
-        <img src="src/assets/images/download-removebg-preview.png" alt="image" />
+        <img src="https://files.fm/u/9vy5yyfv7v" alt="image" />
         <h2>React Js</h2>
       </div>
       <div className="skills_content">
