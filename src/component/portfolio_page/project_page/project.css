@@ -151,7 +151,7 @@
       height: 100%;
       z-index: 1;
     }
-    /* .item a:hover ~ .item__overlay,  */.item a:focus ~ .item__overlay {
+     .item a:hover ~ .item__overlay,  .item a:focus ~ .item__overlay {
       transform: translate3d(0, 0, 0);
      color: var(--beauty-color);
     }
