@@ -29,6 +29,20 @@
 .trapdoor:hover .bottom, .trapdoor2:hover .bottom2, .trapdoor3:hover .bottom3, .trapdoor4:hover .bottom4, .trapdoor5:hover .bottom5 {
   top: 100%;
 }
+.trapdoor:hover .top~.anchor ,.trapdoor2:hover .top2~.anchor2, .trapdoor3:hover .top3~.anchor3, .trapdoor4:hover .top4~.anchor4, .trapdoor5:hover .top5~.anchor5{
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  margin-top: -23px;
+  margin-left: -50px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:var(--beauty-color);
+}
+
 
 /* Anchor Styles */
 .trapdoor .anchor, .trapdoor2 .anchor2, .trapdoor3 .anchor3, .trapdoor4 .anchor4, .trapdoor5 .anchor5 {
@@ -42,12 +56,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: transparent;
+  color:transparent;
 }
 
-.anchor:hover, .anchor2:hover, .anchor3:hover, .anchor4:hover, .anchor5:hover {
-  color: var(--beauty-color);
-}
+/* .anchor:hover, .anchor2:hover, .anchor3:hover, .anchor4:hover, .anchor5:hover {
+  color: ;
+} */
 
 /* Top and Bottom Elements */
 .top, .top2, .top3, .top4, .top5 {
@@ -189,6 +203,20 @@
   top: 100%;
 }
 
+.trapdoor:hover .top~.anchor ,.trapdoor2:hover .top2~.anchor2, .trapdoor3:hover .top3~.anchor3, .trapdoor4:hover .top4~.anchor4, .trapdoor5:hover .top5~.anchor5{
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  margin-top: -23px;
+  margin-left: -50px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:var(--primary-color);
+}
+
 /* Anchor Styles */
 .trapdoor .anchor, .trapdoor2 .anchor2, .trapdoor3 .anchor3, .trapdoor4 .anchor4, .trapdoor5 .anchor5 {
   position: absolute !important;
@@ -304,6 +332,19 @@
 }
 .door:hover:before,.door2:hover:before,.door3:hover:before,.door4:hover:before,.door5:hover:before{
    color: var(--primary-color);
+}
+.door:focus:hover ~ .trapdoor .anchor{
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  margin-top: -23px;
+  margin-left: -50px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
 }
 
 /* Font-face Definitions */
