@@ -30,8 +30,8 @@ export const Home = () => {
   return (
   
      <section className='home_div'>
-       <div className='home_content'>
-       <StyledTypeAnimation>
+       <div className='home_content' data-aos="fade-up">
+       <StyledTypeAnimation data-aos="fade-up">
          <TypeAnimation
       sequence={[
         // Same substring at the start will only be typed out once, initially
@@ -49,9 +49,9 @@ export const Home = () => {
     />
       </StyledTypeAnimation>
 
-        <h1> A Web Developer</h1>
+        <h1 data-aos="fade-up"> A Web Developer</h1>
         {/* <button className='contact_btn'>contact me</button> */}
-        <a className="btn btn--svg js-animated-button" href="#project">
+        <a className="btn btn--svg js-animated-button" href="#project" data-aos="fade-up">
       <span className="btn--svg__label">Contact</span>
       <svg className="btn--svg__circle" width="190" x="0px" y="0px" viewBox="0 0 60 60" enableBackground="new 0 0 60 60">
         <circle className="js-discover-circle" fill="#FFFFFF" cx="30" cy="30" r="28.7"></circle>

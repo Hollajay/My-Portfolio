@@ -140,21 +140,21 @@ export const Portfolio = () => {
       </div>
 
     <div className='Content_sect' >
-     <section  id='homePage'  ref={homeRef}>
+     <section  id='homePage'  ref={homeRef}  >
       <Home/>
      </section>
                   
                    {/* about me  */}
   
     <section id='aboutPage' ref={aboutRef}>
-    <About/>
+    <About />
     </section>
   
 
                   {/* my skills */}
 
 <section id='skillsPage' ref={skillsRef}>
- <Skills/>
+ <Skills />
 </section>
 
 
@@ -181,7 +181,7 @@ export const Portfolio = () => {
 </section>
 
     {/* footer */}
-    <div className="footer-copyright"><p>Copyright <FaRegCopyright /> 2024  Design by Hincas. All Right Reserved</p></div>
+    <div className="footer-copyright" ><p>Copyright <FaRegCopyright /> 2024  Design by Hincas. All Right Reserved</p></div>
     
 
 

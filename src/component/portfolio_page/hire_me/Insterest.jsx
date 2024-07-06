@@ -32,7 +32,7 @@ export const Insterest = () => {
   }, []);
 
   return (
-    <section className='interest_section' id='hireMe'>
+    <section className='interest_section' id='hireMe' data-aos="fade-up">
       {/* <div className='interested_div'>
        
       </div> */}
@@ -43,43 +43,43 @@ export const Insterest = () => {
         </div>
         <div className="text1">
       
-        <h1>Interested in working with me?</h1>
+        <h1 data-aos="fade-up">Interested in working with me?</h1>
         {/* <button>Hire me</button> */}
-        <button className="pulse">Hire me</button>
+        <button className="pulse" data-aos="fade-up">Hire me</button>
         </div>
       </div>
 
       <div className='contactMe_div'>
 
      
-      <div ref={el => buttonsRef.current[0] = el} className="button">
+      <div ref={el => buttonsRef.current[0] = el} className="button" data-aos="fade-up">
         <div className="pattern">
           <div className="target inner bg1"></div>
         </div>
         <div className="text">
-        <FaRegAddressCard  className='info_icon'/>
-          <h1>Address</h1>
-          <address>no2 bodija road Ibadan, Oyo state</address>
+        <FaRegAddressCard  className='info_icon' data-aos="fade-up"/>
+          <h1 data-aos="fade-up">Address</h1>
+          <address data-aos="fade-up">no2 bodija road Ibadan, Oyo state</address>
         </div>
       </div>
-      <div ref={el => buttonsRef.current[1] = el} className="button">
+      <div ref={el => buttonsRef.current[1] = el} className="button" data-aos="fade-up">
         <div className="pattern">
           <div className="target inner bg1"></div>
         </div>
         <div className="text">
-        <TfiEmail className='info_icon'/>
-          <h1>Email</h1>
-          <p>olajide2210@gmail.com</p>
+        <TfiEmail className='info_icon' data-aos="fade-up"/>
+          <h1 data-aos="fade-up">Email</h1>
+          <p data-aos="fade-up">olajide2210@gmail.com</p>
         </div>
       </div>
-      <div ref={el => buttonsRef.current[2] = el} className="button">
+      <div ref={el => buttonsRef.current[2] = el} className="button" data-aos="fade-up">
         <div className="pattern">
           <div className="target inner bg1"></div>
         </div>
         <div className="text">
-        <FaPhoneAlt className='info_icon'/>
-          <h1>Phone</h1>
-          <p>+234 8118908368</p>
+        <FaPhoneAlt className='info_icon' data-aos="fade-up"/>
+          <h1 data-aos="fade-up">Phone</h1>
+          <p data-aos="fade-up">+234 8118908368</p>
         </div>
       </div>
       </div>
