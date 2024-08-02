@@ -48,7 +48,7 @@
        background-color: transparent;
        padding-left: 1rem;
        font-size: 15px;
-       color: var(--secondary-color);
+       color: var(--beauty-color);
    }
    ::placeholder{
        color: var(--secondary-color); 
@@ -60,6 +60,7 @@
        align-items: center;
        justify-content: center;
        border-radius: 2rem;
+       color: var(--secondary-color);
    }
    .text_area_div textarea{
      width: 100%;  
@@ -71,6 +72,7 @@
      padding: 1rem;
      font-size: 15px;
      outline: none;
+     color: var(--beauty-color);
    }
    .form_field button{
        width: 200px;
@@ -145,7 +147,7 @@
            background-color: transparent;
            padding-left: 1rem;
            font-size: 15px;
-           color: var(--secondary-color);
+           color: var(--beauty-color);
        }
        ::placeholder{
            color: var(--secondary-color); 
@@ -168,7 +170,9 @@
          padding: 1rem;
          font-size: 15px;
          outline: none;
+         color: var(--secondary-color);
        }
+    
        .form_field button{
            width: 200px;
            height: 40px;
