@@ -74,7 +74,7 @@
      outline: none;
      color: var(--beauty-color);
    }
-   .form_field button{
+   .form_field .submitFormBtn{
        width: 200px;
        height: 40px;
        border-radius: 2rem;
@@ -173,7 +173,7 @@
          color: var(--secondary-color);
        }
     
-       .form_field button{
+       .form_field .submitFormBtn{
            width: 200px;
            height: 40px;
            border-radius: 2rem;

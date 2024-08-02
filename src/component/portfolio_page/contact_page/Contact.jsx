@@ -1,11 +1,38 @@
 import axios from 'axios'
 import './contact.css'
 import { useState } from 'react'
-// import { ToastContainer, toast } from 'react-toastify';
+ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export const Contact = () => {
+  const successfulmessage = () => {
+    toast.success("Message sent successfully.", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    
+      });
+  }
 
+  const errormessage = () => {
+    toast.error("All fields are required.", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    
+      }); 
+    
+  }
   
   const [formData, setFormData] = useState({
     firstName: '',
@@ -24,18 +51,18 @@ export const Contact = () => {
     e.preventDefault();
     try {
       await axios.post(API, formData);
-      console.log(formData);
+     
       setFormData({
         firstName: '',
         email: '',
         subject: '',
         message: ''
       });
+      successfulmessage()
     
     } catch (error) {
+     errormessage()
       console.log(error);
-      alert('Failed to send message!');
-      console.log(formData);
     }
   }
 
@@ -91,9 +118,11 @@ export const Contact = () => {
                 data-aos="fade-up"
                 value={formData.message}
                 onChange={handleInput}
+                aria-required
               ></textarea>
             </div>
-            <button data-aos="fade-up" onClick={sendEmail}>SEND MESSAGE</button>
+            <button className='submitFormBtn' data-aos="fade-up" onClick={sendEmail}>SEND MESSAGE</button>
+            <ToastContainer />
           </form>
         </div>
       </div>
