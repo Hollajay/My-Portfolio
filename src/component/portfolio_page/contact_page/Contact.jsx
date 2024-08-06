@@ -40,7 +40,7 @@ export const Contact = () => {
     subject: '',
     message: ''
   });
-  const API = 'http://localhost:3000/message'
+  const API = 'https://hincasbackend.onrender.com/message'
 
   const handleInput = (e) => {
     const { name, value } = e.target;
