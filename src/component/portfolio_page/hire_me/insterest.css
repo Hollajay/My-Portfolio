@@ -60,9 +60,9 @@
             /* contact me div */
 .contactMe_div{
     width: 90%;
-    gap: 50px;
+    gap: 10px;
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
    margin: 3rem auto;
 
 }
@@ -82,7 +82,7 @@
     overflow: hidden;
     padding: 1em 2em;
     position: relative;
-    width: 300px;
+    width: 100%;
     height: 300px;
     display: flex;
     justify-content: center;
@@ -112,12 +112,13 @@
   .inner {
     height: 600px;
     width: 1000px;
+    overflow: hidden;
   
   }
 
 
   .text {
-  min-width: 300px;
+  min-width: 500px;
     height: 500px;
     position: relative;
     opacity: 1;

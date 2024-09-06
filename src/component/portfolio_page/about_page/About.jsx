@@ -10,12 +10,7 @@ export const About = () => {
   
   return (
     <section className='aboutMe_container' id='aboutPage' >
-      <div className='left_about_grid'>
-        <div className='img-container' data-aos= "fade-up">
-        <img src="https://i.postimg.cc/SKptkTt8/profileimage.jpg" alt="image" />
-        </div>
-    
-      </div>
+      
       <div className='Right_about_container'>
         <h1 className='Right_about_header' data-aos="fade-up" data-aos-easing="linear"
      data-aos-duration="500">Know me more</h1>
@@ -37,6 +32,12 @@ export const About = () => {
 
         </div>
 
+      </div>
+      <div className='left_about_grid'>
+        <div className='img-container' data-aos= "fade-up">
+        <img src="https://i.postimg.cc/SKptkTt8/profileimage.jpg" alt="image" />
+        </div>
+    
       </div>
     </section>
 

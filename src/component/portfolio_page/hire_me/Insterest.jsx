@@ -59,7 +59,7 @@ export const Insterest = () => {
         <div className="text">
         <FaRegAddressCard  className='info_icon' data-aos="fade-up"/>
           <h1 data-aos="fade-up">Address</h1>
-          <address data-aos="fade-up">no2 bodija road Ibadan, Oyo state</address>
+          <address data-aos="fade-up">Ibadan,Nigeria</address>
         </div>
       </div>
       <div ref={el => buttonsRef.current[1] = el} className="button" data-aos="fade-up">
