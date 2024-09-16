@@ -24,9 +24,9 @@ export const Project = () => {
 
   <div className="item " data-aos="fade-up">
     <a href="#0" aria-labelledby="person1"></a>
-    <img src="https://media.istockphoto.com/id/931198580/photo/software-web-development-programming-code-on-black.jpg?s=612x612&w=0&k=20&c=ITmoBB18VB0qbDpMcc1GG1adj0Y3LsdpJ1uo8LN3k_c=" alt="" />
-    <Link className="item__overlay">
-      <h3 id="person1" aria-hidden="true">Gallery website</h3>
+    <img src="https://i.postimg.cc/tRhmQxj7/Screenshot-357.png" alt="" />
+    <Link to="https://xlensstudio.onrender.com" className="item__overlay">
+      <h3 id="person1" aria-hidden="true">Xlens Visualization</h3>
       <div className="item__body">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
@@ -34,9 +34,9 @@ export const Project = () => {
   </div>
   <div className="item " data-aos="fade-up">
     <a href="#0" aria-labelledby="person1"></a>
-    <img src="https://media.istockphoto.com/id/174947618/photo/online-newspaper.jpg?s=612x612&w=0&k=20&c=md7AwqeO5zuQ-L0WBjiPljj4M2rRqSKW56oFHZgj66c=" alt="" />
-    <Link className="item__overlay">
-      <h3 id="person1" aria-hidden="true">Quiz website</h3>
+    <img src="https://i.postimg.cc/rmdXNF0x/Screenshot-355.png" alt="" />
+    <Link to="https://claritycrypto.onrender.com" className="item__overlay">
+      <h3 id="person1" aria-hidden="true">Crypto Mining</h3>
       <div className="item__body">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>

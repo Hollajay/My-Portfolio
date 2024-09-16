@@ -51,7 +51,6 @@ export const Contact = () => {
     e.preventDefault();
     try {
       await axios.post(API, formData);
-     
       setFormData({
         firstName: '',
         email: '',
