@@ -1,7 +1,7 @@
-import axios from 'axios'
-import './contact.css'
-import { useState } from 'react'
- import { ToastContainer, toast } from 'react-toastify';
+import axios from 'axios';
+import './contact.css';
+import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export const Contact = () => {
@@ -15,8 +15,7 @@ export const Contact = () => {
       draggable: true,
       progress: undefined,
       theme: "light",
-    
-      });
+    });
   }
 
   const errormessage = () => {
@@ -29,18 +28,16 @@ export const Contact = () => {
       draggable: true,
       progress: undefined,
       theme: "light",
-    
-      }); 
-    
+    });
   }
-  
+
   const [formData, setFormData] = useState({
     firstName: '',
     email: '',
     subject: '',
     message: ''
   });
-  const API = 'https://hincasbackend.onrender.com/message'
+  const API = 'https://hincasbackend.onrender.com/message';
 
   const handleInput = (e) => {
     const { name, value } = e.target;
@@ -57,21 +54,18 @@ export const Contact = () => {
         subject: '',
         message: ''
       });
-      successfulmessage()
-    
+      successfulmessage();
     } catch (error) {
-     errormessage()
+      errormessage();
       console.log(error);
     }
   }
 
   return (
     <section className='anyQuestion_div' id='contactPage' data-aos="fade-up">
-      
       <div>
         <div>
-          <form className='form_field' data-aos="fade-up" > 
-            {/* onSubmit={sendEmail} */}
+          <form className='form_field' data-aos="fade-up" onSubmit={sendEmail}>
             <div className='input_div'>
               <input
                 type="text"
@@ -118,7 +112,7 @@ export const Contact = () => {
                 aria-required
               ></textarea>
             </div>
-            <button className='submitFormBtn' data-aos="fade-up" onClick={sendEmail}>SEND MESSAGE</button>
+            <button className='submitFormBtn' data-aos="fade-up" type="submit">SEND MESSAGE</button>
             <ToastContainer />
           </form>
         </div>
@@ -127,5 +121,5 @@ export const Contact = () => {
         <iframe className='Map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126614.56223805038!2d3.822658372182909!3d7.386909894877332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398d77eeff086f%3A0x3b33e0f76e8e04a9!2sIbadan%2C%20Oyo!5e0!3m2!1sen!2sng!4v1710590542906!5m2!1sen!2sng"></iframe>
       </div>
     </section>
-  )
+  );
 }

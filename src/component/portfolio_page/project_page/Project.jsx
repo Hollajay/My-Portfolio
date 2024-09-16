@@ -42,7 +42,7 @@ export const Project = () => {
       </div>
     </Link>
   </div>
-  <div className="item " data-aos="fade-up">
+  {/* <div className="item " data-aos="fade-up">
     <a href="#0" aria-labelledby="person1"></a>
     <img src="https://media.istockphoto.com/id/1385010159/photo/person-hand-typing-on-keyboard-with-login-and-password-on-screen-display.jpg?s=612x612&w=0&k=20&c=IpsU25g9TLfb37eNnW6K1-e0Sl3Lq4rj417NxTJkkxY=" alt="" />
     <Link className="item__overlay">
@@ -62,7 +62,7 @@ export const Project = () => {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
     </Link>
-  </div>
+  </div> */}
     </div>
    
   

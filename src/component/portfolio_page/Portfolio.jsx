@@ -1,4 +1,4 @@
-import './portfolio.css'
+import './portfolio.css';
 import { FaRegCopyright } from "react-icons/fa";
 import { useEffect, useRef, useState } from 'react';
 import { NavLink } from 'react-router-dom';
@@ -9,8 +9,6 @@ import { Project } from './project_page/Project';
 import { Skills } from './skills_page/Skills';
 import { About } from './about_page/About';
 import { Home } from './home_page/Home';
-
-
 
 export const Portfolio = () => {
   const [activeLink, setActiveLink] = useState('');
@@ -25,12 +23,12 @@ export const Portfolio = () => {
   useEffect(() => {
     const handleScroll = () => {
       const sections = [
-        { id: 'homePage', ref: homeRef, offset: 0 },
-        { id: 'aboutPage', ref: aboutRef, offset: 0 },
-        { id: 'skillsPage', ref: skillsRef, offset: 0 },
-        { id: 'projectsPage', ref: projectsRef, offset: 0 },
-        { id: 'hireMe', ref: hireRef, offset: 0 },
-        { id: 'contactPage', ref: contactRef, offset:0}
+        { id: 'homePage', ref: homeRef },
+        { id: 'aboutPage', ref: aboutRef },
+        { id: 'skillsPage', ref: skillsRef },
+        { id: 'projectsPage', ref: projectsRef },
+        { id: 'hireMe', ref: hireRef },
+        { id: 'contactPage', ref: contactRef }
       ];
 
       let currentSection = '';
@@ -47,13 +45,9 @@ export const Portfolio = () => {
       setActiveLink(currentSection);
     };
 
-    // Initial check
     handleScroll();
-
-    // Attach scroll listener
     window.addEventListener('scroll', handleScroll);
 
-    // Clean up on unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -65,31 +59,26 @@ export const Portfolio = () => {
       duration: 800,
       delay: 0,
       smooth: 'easeInOutQuart',
-      offset: 0 // Adjust offset if necessary
+      offset: -70
     });
   };
 
-
-
-
   return (
-  <div className='Container'>
-        <div className="sidebar">
+    <div className='Container'>
+      <div className="sidebar">
         <ul>
-             <li className='homeList'>
-            
+          <li className='homeList'>
             <NavLink
-              to="/#homePage"
+              to="#homePage"
               className={activeLink === 'homePage' ? "Onactive" : "navlink"}
               onClick={() => scrollToSection('homePage')}
             >
               Home
             </NavLink>
-           
           </li>
           <li className='aboutList'>
             <NavLink
-              to="/#aboutPage"
+              to="#aboutPage"
               className={activeLink === 'aboutPage' ? "Onactive" : ""}
               onClick={() => scrollToSection('aboutPage')}
             >
@@ -98,7 +87,7 @@ export const Portfolio = () => {
           </li>
           <li className='skillsList'>
             <NavLink
-              to="/#skillsPage"
+              to="#skillsPage"
               className={activeLink === 'skillsPage' ? "Onactive" : ""}
               onClick={() => scrollToSection('skillsPage')}
             >
@@ -107,7 +96,7 @@ export const Portfolio = () => {
           </li>
           <li className='projectsList'>
             <NavLink
-              to="/#projectsPage"
+              to="#projectsPage"
               className={activeLink === 'projectsPage' ? "Onactive" : ""}
               onClick={() => scrollToSection('projectsPage')}
             >
@@ -116,18 +105,17 @@ export const Portfolio = () => {
           </li>
           <li className='hireList'>
             <NavLink
-              to="/#hireMe"
+              to="#hireMe"
               className={activeLink === 'hireMe' ? "Onactive" : ""}
               onClick={() => scrollToSection('hireMe')}
             >
               Hire me
             </NavLink>
           </li>
-          
           <li className='contactList'>
             <NavLink
-              to="/#contactPage"
-              className={activeLink === 'contactPage' ? "Onactive" : "navLink"}
+              to="#contactPage"
+              className={activeLink === 'contactPage' ? "Onactive" : ""}
               onClick={() => scrollToSection('contactPage')}
             >
               Contact
@@ -136,108 +124,29 @@ export const Portfolio = () => {
         </ul>
       </div>
 
-    <div className='Content_sect' >
-     <section  id='homePage'  ref={homeRef}  >
-      <Home/>
-     </section>
-                  
-                   {/* about me  */}
-  
-    <section id='aboutPage' ref={aboutRef}>
-    <About />
-    </section>
-  
-
-                  {/* my skills */}
-
-<section id='skillsPage' ref={skillsRef}>
- <Skills />
-</section>
-
-
-    {/* my projects */}
-
-
-<section id='projectsPage' ref={projectsRef}>
-  <Project/>
-</section>
-
-
-
-      {/* insterested in me div */}
-  
-<section  id='hireMe' ref={hireRef} >
-  <Insterest  />
-</section>
-
-
-                   {/* Have any question section */}
-
-<section  id='contactPage'  ref={contactRef} >
-<Contact  />
-</section>
-
-    {/* footer */}
-    <div className="footer-copyright" ><p>Copyright <FaRegCopyright /> 2024  Design by Hincas. All Right Reserved</p></div>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
-    </div> 
-  </div>
-  )
-}
+      <div className='Content_sect'>
+        <section id='homePage' ref={homeRef}>
+          <Home />
+        </section>
+        <section id='aboutPage' ref={aboutRef}>
+          <About />
+        </section>
+        <section id='skillsPage' ref={skillsRef}>
+          <Skills />
+        </section>
+        <section id='projectsPage' ref={projectsRef}>
+          <Project />
+        </section>
+        <section id='hireMe' ref={hireRef}>
+          <Insterest onHireClick={() => contactRef.current.scrollIntoView({ behavior: 'smooth' })} />
+        </section>
+        <section id='contactPage' ref={contactRef}>
+          <Contact />
+        </section>
+        <div className="footer-copyright">
+          <p>Copyright <FaRegCopyright /> 2024 Design by Hincas. All Right Reserved</p>
+        </div>
+      </div>
+    </div>
+  );
+};
