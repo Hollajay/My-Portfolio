@@ -1,4 +1,5 @@
-import './skills.css'
+import './skills.css';
+import node from '../../../assets/384bea478960f3e4225188e955f60cb2.png'
 
 export const Skills = () => {
   return (
@@ -22,6 +23,10 @@ export const Skills = () => {
         <h2>React Js</h2>
       </div>
       <div className="skills_content" data-aos="fade-up">
+      <img src={node} alt="image" />
+        <h2>Node js</h2>
+      </div>
+      <div className="skills_content" data-aos="fade-up">
         <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="image" />
         <h2>Bootstrap</h2>
       </div>
@@ -41,6 +46,8 @@ export const Skills = () => {
       <img src="https://i.postimg.cc/g0SJm80p/logomark-orange-2x-removebg-preview.png" alt="image" />
         <h2>git</h2>
       </div>
+
+      
   
     </div>
   

@@ -54,11 +54,11 @@ export const Home = () => {
         {/* <button className='contact_btn'>contact me</button> */}
         <a
   className="btn btn--svg js-animated-button"
-  href="https://ologunagba-olajide.onrender.com/\public\OLOGUNAGBA OLAJIDE CV.pdf" 
+  href="/OLOGUNAGBA OLAJIDE CV.pdf" 
   download="OLOGUNAGBA OLAJIDE CV.pdf" 
   data-aos="fade-up"
 >
-  <span className="btn--svg__label">DOWNLOAD CV</span>
+  <span className="btn--svg__label">Download cv</span>
   <svg className="btn--svg__circle" width="190" x="0px" y="0px" viewBox="0 0 60 60" enableBackground="new 0 0 60 60">
     <circle className="js-discover-circle" fill="#FFFFFF" cx="30" cy="30" r="28.7"></circle>
   </svg>

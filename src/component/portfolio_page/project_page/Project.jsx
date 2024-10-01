@@ -17,7 +17,7 @@ export const Project = () => {
     <Link  to="https://crpto-ten.vercel.app/"  className="item__overlay">
       <h3 id="person1" aria-hidden="true">Coin Render</h3>
       <div className="item__body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p><b>Coin Render</b> A React project using the Gecko API to display top 100 cryptocurrencies, showcasing real-time data handling and strong frontend skills</p>
       </div>
     </Link>
   </div>
@@ -28,7 +28,7 @@ export const Project = () => {
     <Link to="https://xlensstudio.onrender.com" className="item__overlay">
       <h3 id="person1" aria-hidden="true">Xlens Visualization</h3>
       <div className="item__body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p><b>Xlens Visualization</b> A full-stack project built with React, Node.js, and MongoDB, highlighting backend integration, responsive design, and smooth user interactions.</p>
       </div>
     </Link>
   </div>
@@ -38,7 +38,7 @@ export const Project = () => {
     <Link to="https://claritycrypto.onrender.com" className="item__overlay">
       <h3 id="person1" aria-hidden="true">Crypto Mining</h3>
       <div className="item__body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p><b>Crypto Mining</b> A Vite-React project for cryptocurrency buying, selling, and mining, demonstrating my expertise in creating functional, fast, and scalable applications.</p>
       </div>
     </Link>
   </div>

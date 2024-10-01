@@ -241,7 +241,7 @@ hr:hover{
     z-index: 99;
   }
   .btn {
-      font-size: 1em;
+      font-size: .7rem;
       line-height: 1em;
       letter-spacing: 0.04em;
       display: inline-block;
@@ -252,12 +252,14 @@ hr:hover{
       width: 120px;
       overflow: hidden;
       border-radius: 10px;
+    
     }
     .btn--svg:hover .btn--svg__circle circle {
       transform: scale(0);
     }
     .btn--svg:hover .btn--svg__label {
       color: #fff;
+   
     }
     .btn--svg:hover .btn--svg__border--left path,
     .btn--svg:hover .btn--svg__border--right path {
@@ -285,6 +287,7 @@ hr:hover{
       -webkit-font-smoothing: antialiased;
       font-family: sans-serif;
       font-weight: bold;
+      font-size: .7rem;
       text-align: center;
       color: var(--primary-color);
       z-index: 3;
