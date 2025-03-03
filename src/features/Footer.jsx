@@ -4,7 +4,7 @@ import { IconProps } from "../component/iconProps"
 export const Footer = () => {
   return (
     <div className=" flex-col flex items-center">
-        <div className="bg flex text-light-500 space-x-6">
+        <div className="bg lg:hidden flex text-light-500 space-x-6">
             {IconProps.map((data,index) =>(
                <a href={data.link} key={index}>{data.icon}</a>
             ))}

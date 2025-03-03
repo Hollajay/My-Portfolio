@@ -66,11 +66,11 @@ export const Nav = ({
         </div>
         
           {theme === "light" ? 
-          <div className="md:hidden"><img className="w-28  object-contain" src={logo2} alt="image" /> </div> : 
-          <div className="md:hidden"><img className="w-28  object-contain" src={logo1} alt="image" /></div>
+          <div className="lg:hidden"><img className="w-28  object-contain" src={logo2} alt="image" /> </div> : 
+          <div className="lg:hidden"><img className="w-28  object-contain" src={logo1} alt="image" /></div>
           }  
 
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-7">
         <button
           onClick={toggleTheme}
           className=" rounded-md dark:bg-gray-700 transition-all lg:absolute right-5"
@@ -78,7 +78,7 @@ export const Nav = ({
           {theme === "light" ? <div><img className="w-7" src={moon} alt="moon" /></div> : <div><img className="w-7" src={sun} alt="sun" /></div>}
         </button>
 
-        <button className="md:hidden text-light-500">
+        <button className="lg:hidden text-light-500">
         <RxTextAlignJustify  size={45}/>
         </button>
         </div>
