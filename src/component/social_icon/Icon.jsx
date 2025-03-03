@@ -43,8 +43,6 @@ export const Icon = () => {
         @linkedin
       </a>
     </div>
-
-
     </>
   );
 };

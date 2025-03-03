@@ -1,27 +1,43 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Oleo+Script:wght@400;700&display=swap');
-
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Oleo Script", system-ui;
-  font-weight: 400;
-  font-style: normal;
- 
+@import url('https://fonts.googleapis.com/css2?family=Cagliostro&family=Smooch+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import "tailwindcss";
+html {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-:root{
-  --dark-color:#0C1844;
-  --primary-color:#C80036;
-  --secondary-color:#C73659;
-  --light-color:#376E6F;
-  --white-color:white;
-  --beauty-color:#FFF5E1;
-
-
- 
+.light{
+ --bg:#D4EBF8;
+ --h1: #1F509A;
+ --p: #E38E49;
+ --main: #0A3981;
+ --font-family:  "Cagliostro", serif;
+ --subhead-font: "VT323", serif;
+ --card-bg: rgba(0,0,0,0.2);
+ --side-icon: #0A3981;
 }
-a{
-  text-decoration: none;
-
+.dark{
+  --bg: #1C325B;
+ --main: #E5E3D4;
+ --p: #9ABF80 ;
+ --h1: #89A8B2; 
+ --font-family:  "Cagliostro", serif;
+ --subhead-font: "VT323", serif;
+ --card-bg: rgba(0,0,0,0.2);
+ --side-icon: #89A8B2;
+}
+@theme {
+  --font-list: var(--font-family);
+  --font-subhead: var(--subhead-font);
+  --color-light-50: oklch(0.71 0.013 17.38);
+  --color-light-100: var(--bg);
+  --color-light-200: #AF8260;
+  --color-light-300: var(--h1);
+  --color-light-400: var(--p);
+  --color-light-500: var(--main);
+  --color-card-100: var(--card-bg);
+  --color-light-20: var(--side-icon)
+  /* ... */
+  --shadow-2xs: 0 1px rgb(0 0 0 / 0.05);
+  --shadow-pro: 10px 6px 12px 2px rgb(154 191 128 / 0.2);
+  --shadow-project: 2px 1px 6px 1px rgb(154 191 128 / 0.2), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  /* ... */
 }
