@@ -21,7 +21,7 @@ export const Home = () => {
   const hero = useRef(null)
 
   return (
-    <div className={`font-list relative `}>
+    <div className={`font-list relative bg-light-100 `}>
           <Nav aboutRef={aboutRef} experienceRef={experienceRef} projectRef={projectRef} contactRef={contactRef} hero={hero}/>
            <SideIcon/>
         <div className="fixed lg:flex hidden items-center flex-col gap-48  text-light-500  bottom-0 right-0">

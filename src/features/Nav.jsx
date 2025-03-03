@@ -1,5 +1,6 @@
 
-import logo from "../assets/MyLogo.png";
+import logo1 from "../assets/logo1.png";
+import logo2 from "../assets/logo2.png"
 import { useEffect, useState } from "react";
 import { RxTextAlignJustify } from "react-icons/rx";
 import sun from '../assets/svg/sun (1).svg'
@@ -30,8 +31,8 @@ export const Nav = ({
     }
   };
   return (
-    <div className="w-full fixed z-50">
-      <div className="w-full flex p-4 items-center lg:justify-center justify-between bg-light-100 font-list">
+    <div className="w-full fixed z-50 bg-light-100">
+      <div className="w-full flex p-4 items-center lg:justify-center justify-between font-list">
         <div className="space-x-14 lg:flex  hidden items-center text-light-500 ">
           <p
             onClick={() => scrollToSection(aboutRef)}
@@ -46,7 +47,9 @@ export const Nav = ({
             Experience
           </p>
           <p onClick={() => scrollToSection(hero)}>
-            <img className="w-40 h-14 object-contain" src={logo} alt="image" />
+            {theme === "light" ? <img className="w-40 h-14 object-contain" src={logo2} alt="image" />
+            : <img className="w-40 h-14 object-contain" src={logo1} alt="image" />}
+            
           </p>
           <p
             onClick={() => scrollToSection(projectRef)}
@@ -61,9 +64,12 @@ export const Nav = ({
             Contact
           </p>
         </div>
-        <div className="md:hidden">
-          <img className="w-28  object-contain" src={logo} alt="image" />
-        </div>
+        
+          {theme === "light" ? 
+          <div className="md:hidden"><img className="w-28  object-contain" src={logo2} alt="image" /> </div> : 
+          <div className="md:hidden"><img className="w-28  object-contain" src={logo1} alt="image" /></div>
+          }  
+
         <div className="flex items-center space-x-2">
         <button
           onClick={toggleTheme}

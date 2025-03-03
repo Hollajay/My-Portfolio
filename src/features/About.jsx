@@ -3,12 +3,12 @@ import { SkillProps } from '../component/skills-props'
 
 export const About = () => {
   return (
-    <div className="bg-light-100 lg:px-15 w-full min-h-screen">
+    <div className=" lg:px-15 w-full min-h-screen">
        <div className="lg:px-20 p-6">
        <h1 className="text-3xl  text-left font-subhead text-light-400">{`<About Me/>`}</h1>
          <div className="w-full lg:flex flex-row-reverse p-2 space-y-7 my-8">
-            <div className="lg:w-1/2 w-full flex justify-center items-center lg:p-12 overflow-hidden">
-            <div className='w-80 h-96 bg-light-400 rounded-2xl '>
+            <div className="lg:w-1/2 w-full flex justify-center items-center lg:p-12 ">
+            <div className='md:w-80 md:h-96 w-64 h-80 bg-light-400 rounded-2xl '>
               <img className='w-80 h-full object-cover rounded-2xl transform rotate-12 hover:rotate-0 transition-all duration-700 ease-in'  src={profileimage} alt="profileimage" />
               </div></div>
             <div className="lg:w-1/2 w-full space-y-5 text-light-300 text-lg">

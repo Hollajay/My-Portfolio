@@ -1,6 +1,6 @@
 export const Header = () => {
   return (
-    <div className="w-full h-screen flex items-center bg-light-100 lg:px-20 md:px-10">
+    <div className="w-full h-screen flex items-center lg:px-20 md:px-10">
       <div className="lg:px-28 p-4 mt-32 space-y-3">
         <p className="text-2xl font-subhead text-light-400">Hi, my name is</p>
         <h1 className="md:text-7xl text-4xl text-light-500 font-bold text-400">
