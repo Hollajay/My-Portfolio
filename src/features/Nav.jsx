@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { RxTextAlignJustify } from "react-icons/rx";
 import sun from '../assets/svg/sun (1).svg'
 import moon from '../assets/svg/moon.svg'
+import { BiX } from "react-icons/bi";
 
 export const Nav = ({
   aboutRef,
@@ -30,6 +31,24 @@ export const Nav = ({
       });
     }
   };
+
+  const mobileScrollToSection = (elementRef) => {
+    handleClicked()
+    if (elementRef?.current) {
+      window.scrollTo({
+        top: elementRef.current.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
+
+  const [isOpen,SetIsOpen] = useState(true)
+
+  const handleClicked = () =>{
+    SetIsOpen(!isOpen)
+    console.log(isOpen)
+  }
   return (
     <div className="w-full fixed z-50 bg-light-100">
       <div className="w-full flex p-4 items-center lg:justify-center justify-between font-list">
@@ -64,11 +83,12 @@ export const Nav = ({
             Contact
           </p>
         </div>
-        
+        <div onClick={() => scrollToSection(hero)}>
           {theme === "light" ? 
           <div className="lg:hidden"><img className="w-28  object-contain" src={logo2} alt="image" /> </div> : 
           <div className="lg:hidden"><img className="w-28  object-contain" src={logo1} alt="image" /></div>
           }  
+          </div>
 
         <div className="flex items-center space-x-7">
         <button
@@ -78,9 +98,43 @@ export const Nav = ({
           {theme === "light" ? <div><img className="w-7" src={moon} alt="moon" /></div> : <div><img className="w-7" src={sun} alt="sun" /></div>}
         </button>
 
-        <button className="lg:hidden text-light-500">
+        <button onClick={()=> handleClicked()} className="lg:hidden text-light-500">
         <RxTextAlignJustify  size={45}/>
         </button>
+        </div>
+      </div>
+
+      <div className={`absolute ${!isOpen ? 'block' : 'hidden'}  top-0 w-full h-screen bg-light-500`}>
+      <div className="p-4 flex items-center justify-between">
+      <div className="" onClick={() => mobileScrollToSection(hero)}>
+      {theme === "light" ? 
+          <div className="lg:hidden"><img className="w-28  object-contain" src={logo1} alt="image" /> </div> : 
+          <div className="lg:hidden"><img className="w-28  object-contain" src={logo2} alt="image" /></div>
+          }  
+      </div>
+        <div className="text-light-100 "><BiX onClick={()=> handleClicked()}  size={45}/></div>
+      </div>
+      <div className="w-full h-full flex flex-col gap-16 font-bold text-2xl  items-center justify-center text-light-100 ">
+          <p
+            onClick={() => mobileScrollToSection(aboutRef)}
+          >
+            About
+          </p>
+          <p
+            onClick={() => mobileScrollToSection(experienceRef)}
+          >
+            Experience
+          </p>
+          <p
+            onClick={() => mobileScrollToSection(projectRef)}
+          >
+            Projects
+          </p>
+          <p
+            onClick={() => mobileScrollToSection(contactRef)}
+          >
+            Contact
+          </p>
         </div>
       </div>
     </div>
