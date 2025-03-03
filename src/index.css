@@ -4,6 +4,20 @@
 html {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
+.button-blink{
+  transition: background-color 0.3s; 
+  animation: blink 1.5s infinite;
+}
+@keyframes blink {
+  0%, 100% {
+    opacity: 2;
+  }
+  50% {
+    opacity: 0.5; 
+  }
+}
+
+
 .light{
  --bg:#D4EBF8;
  --h1: #1F509A;
@@ -23,6 +37,7 @@ html {
  --subhead-font: "VT323", serif;
  --card-bg: rgba(0,0,0,0.2);
  --side-icon: #89A8B2;
+
 }
 @theme {
   --font-list: var(--font-family);
@@ -34,7 +49,9 @@ html {
   --color-light-400: var(--p);
   --color-light-500: var(--main);
   --color-card-100: var(--card-bg);
-  --color-light-20: var(--side-icon)
+  --color-light-20: var(--side-icon);
+
+  --animate-blink: .button-blink;
   /* ... */
   --shadow-2xs: 0 1px rgb(0 0 0 / 0.05);
   --shadow-pro: 10px 6px 12px 2px rgb(154 191 128 / 0.2);

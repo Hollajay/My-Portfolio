@@ -9,7 +9,7 @@ export const Header = () => {
         <h1 className="md:text-5xl text-2xl font-bold text-light-300">
           A frontend Web developer
         </h1>
-        <p className="lg:pr-40 md:telgxt-xl text- text-light-300 ">
+        <p className="lg:pr-40 md:text-xl text- text-light-300 ">
           I am a dedicated Software Engineer with over two years plus of
           experience, specializing in Frontend Development. I have a strong
           track record of building user-friendly and SEO-optimized web
@@ -17,8 +17,8 @@ export const Header = () => {
           problems efficiently.
         </p>
         <div className="space-x-5" data-aos="fade-up">
-          <button className="py-3 px-8 border-2 border-light-400 text-light-400">
-            Hire me{" "}
+          <button className="py-3 button-blink px-8 border-2 bg-light-400 border-light-400 text-light-100 ">
+            Hire me
           </button>
           <button className="py-3 px-8 border-2 border-light-400 text-light-400">
             Download cv

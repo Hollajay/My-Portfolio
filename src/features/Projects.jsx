@@ -1,12 +1,11 @@
 import { BiLinkExternal } from "react-icons/bi"
 import { SkillProps } from "../component/skills-props"
-import projectimage from '../assets/project.jpg'
 import { projectProps } from "../component/projectProps"
 
 export const Projects = () => {
   return (
-    <div className="bg-light-100 lg:px-20 md:p-10 w-full min-h-screen">
-    <div className="lg:px-28">
+    <div className="bg-light-100 lg:px-15 md:p-10 w-full min-h-screen">
+    <div className="lg:px-20">
     <h1 className="text-3xl  text-left font-subhead text-light-400">{`<Projects/>`}</h1>
      <div className="grid p-6 lg:grid-cols-3 md:grid-cols-2 gap-7 text-light-500">
       {projectProps.map((data,index) => (

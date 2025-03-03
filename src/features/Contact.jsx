@@ -1,7 +1,7 @@
 export const Contact = () => {
   return (
-    <div className="bg-light-100 lg:px-20 md:px-10 w-full h-full py-6">
-      <div className="lg:px-28 md:px-10 flex items-center h-full w-full">
+    <div className="bg-light-100 lg:px-15 md:px-10 w-full h-full py-6">
+      <div className="lg:px-20 md:px-10 flex items-center h-full w-full">
         {/* <h1 className="text-3xl font-bold">{`<About Me/>`}</h1> */}
         <div className="w-full flex flex-col items-center gap-9">
           <div className="lg:w-1/2 p-3 w-full text-center space-y-7">

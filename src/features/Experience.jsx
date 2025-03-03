@@ -3,8 +3,8 @@ import {  BiHighlight} from "react-icons/bi";
 
 export const Experience = () => {
   return (
-    <div className="bg-light-100 lg:px-20 md:p-5 w-full min-h-screen">
-    <div className="lg:px-28 p-6">
+    <div className="bg-light-100 lg:px-15 md:p-5 w-full min-h-screen">
+    <div className="lg:px-20 p-6">
     <h1 className="text-3xl  text-left font-subhead text-light-400">{`<Experience/>`}</h1>
      <div className="lg:p-6 mt-2  lg:pr-80 flex flex-col gap-14 text-light-300">
         <div className="shadow-pro space-y-2 md:p-5 p-2 rounded-xl">
