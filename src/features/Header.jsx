@@ -20,7 +20,7 @@ export const Header = () => {
           <button className="py-3 rounded-lg button-blink px-8 border-2 bg-light-400 border-light-400 text-light-100 ">
             Hire me
           </button>
-          <button className="py-3 px-8 border-2 rounded-lg border-light-400 text-light-400">
+          <button className="py-3 px-8 border rounded-lg border-light-400 text-light-400 !important">
             Download cv
           </button>
         </div>

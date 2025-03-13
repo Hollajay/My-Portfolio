@@ -112,7 +112,7 @@ export const Nav = ({
           <div className="lg:hidden"><img className="w-28  object-contain" src={logo2} alt="image" /></div>
           }  
       </div>
-        <div className="text-light-100 "><BiX onClick={()=> handleClicked()}  size={45}/></div>
+        <div className="text-light-100 -"><BiX onClick={()=> handleClicked()}  size={45}/></div>
       </div>
       <div className="w-full h-full flex flex-col gap-16 font-bold text-2xl  items-center justify-center text-light-100 ">
           <p

@@ -17,21 +17,21 @@ export const Contact = () => {
 
           <div className="lg:w-1/2 w-full p-4">
             <form className="space-y-5 text-light-500">
-              <div className="border-2 h-12 rounded-lg border-light-300">
+              <div className="border h-12 rounded-lg border-light-300  !important">
                 <input
                   className="w-full h-full px-4 rounded-lg outline-none text-sm"
                   type="text"
                   placeholder="Your Name"
                 />
               </div>
-              <div className="border-2 h-12 rounded-lg border-light-300">
+              <div className="border h-12 rounded-lg border-light-300  !important">
                 <input
                   className="w-full h-full px-4 rounded-lg outline-none text-sm"
                   type="text"
                   placeholder="Your Email"
                 />
               </div>
-              <div className="border-2 h-40 rounded-lg border-light-300">
+              <div className="border h-40 rounded-lg border-light-300  !important">
                 <textarea
                   className="w-full h-full p-4 rounded-lg outline-none text-sm resize-none"
                   placeholder="Your Message"
