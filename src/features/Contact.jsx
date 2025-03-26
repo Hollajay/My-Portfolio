@@ -1,4 +1,10 @@
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 export const Contact = () => {
+  const notify = (event) => {
+    event.preventDefault(); // Prevent form refresh
+    toast.error("The server is currently unavailable. Please try again later.");
+  };
   return (
     <div className=" lg:px-15 md:px-10 w-full h-full py-6">
       <div className="lg:px-20 md:px-10 flex items-center h-full w-full">
@@ -37,13 +43,17 @@ export const Contact = () => {
                   placeholder="Your Message"
                 />
               </div>
-              <button className="py-3 px-8 bg-light-400 text-light-100 rounded-lg ">
+              <button 
+              onClick={notify}
+              className="py-3 px-8 bg-light-400 text-light-100 rounded-lg ">
                 Send Message
+                
               </button>
             </form>
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

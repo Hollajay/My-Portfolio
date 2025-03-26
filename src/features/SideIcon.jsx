@@ -9,7 +9,7 @@ export const SideIcon = () => {
             key={index}
             className="w-12 h-12 flex items-center justify-center  rounded-4xl hover:bg-card-100 transform transition-all ease-in duration-300"
           >
-            <a href={data.link} className="">
+            <a href={data.link} target="_blank" rel="noopener noreferrer" className="">
               {data.icon}
             </a>
           </div>

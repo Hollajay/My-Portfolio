@@ -1,4 +1,15 @@
-export const Header = () => {
+
+export const Header = ({contactRef}) => {
+ const resumeCV = '/Ologunagba Olajide.pdf'
+
+  const scrollToSection = (elementRef) => {
+    if (elementRef?.current) {
+      window.scrollTo({
+        top: elementRef.current.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <div className="w-full h-screen flex items-center lg:px-20 md:px-10">
       <div className="lg:px-28 p-4 mt-32 space-y-3">
@@ -17,12 +28,18 @@ export const Header = () => {
           problems efficiently.
         </p>
         <div className="space-x-5" data-aos="fade-up">
-          <button className="py-3 rounded-lg button-blink px-8 border-2 bg-light-400 border-light-400 text-light-100 ">
+          <button 
+          onClick={() => scrollToSection(contactRef)}
+          className="py-3 rounded-lg button-blink px-8 border-2 bg-light-400 border-light-400 text-light-100 ">
             Hire me
           </button>
-          <button className="py-3 px-8 border rounded-lg border-light-400 text-light-400 !important">
-            Download cv
-          </button>
+          <a
+            href={resumeCV} // Corrected: Use href to point to the file
+            download 
+            className="py-3 px-8 border rounded-lg border-light-400 text-light-400"
+          >
+            Download CV
+          </a>
         </div>
       </div>
     </div>

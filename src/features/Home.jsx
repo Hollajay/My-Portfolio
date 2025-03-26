@@ -28,7 +28,7 @@ export const Home = () => {
           <p className="transform rotate-90 font-subhead ">Designed & built by Ologunagba Olajide</p> 
           <hr className="w-28 transform rotate-90"/>
         </div>
-       <div ref={hero}><Header/></div>
+       <div ref={hero}><Header contactRef={contactRef}/></div>
        <div ref={aboutRef}><About /></div>
        <div ref={experienceRef}><Experience/></div>
        <div ref={projectRef}><Projects/></div>

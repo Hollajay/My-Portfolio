@@ -3,7 +3,7 @@ import {  BiHighlight} from "react-icons/bi";
 
 export const Experience = () => {
   return (
-    <div className=" lg:px-15 md:p-5 w-full min-h-screen">
+    <div className="- lg:px-15 md:p-5 w-full min-h-screen">
     <div className="lg:px-20 p-6">
     <h1 className="text-3xl  text-left font-subhead text-light-400">{`<Experience/>`}</h1>
      <div className="lg:p-6 mt-2  lg:pr-80 flex flex-col gap-14 text-light-300">
@@ -16,19 +16,23 @@ export const Experience = () => {
             <div className="px-5 space-y-3">
             <div className="flex space-x-3 items-center" data-aos="fade-up">
                 <BiHighlight className="text-light-400 w-7"/>
-                <p className="text-sm">Continuously working on providing back-end solutions logistic Continuously working on providing  product</p>
+                <p className="text-sm">Built and maintained responsive web applications using React and
+                TypeScript.</p>
             </div>
             <div className="flex space-x-3 items-center" data-aos="fade-up">
                 <BiHighlight className="text-light-400 w-7"/>
-                <p className="text-sm">Continuously working on providing back-end solutions to the company logistic product</p>
+               <p className="text-sm">Designed and implemented modern UI components with Chakra UI,
+       ensuring consistency and accessibility.</p>
             </div>
             <div className="flex space-x-3 items-center" data-aos="fade-up">
                 <BiHighlight className="text-light-400 w-7"/>
-                <p className="text-sm">Continuously working on providing back-end solutions to the company logistic product</p>
+                <p className="text-sm">Collaborated with cross-functional teams, leveraging Git/GitHub for
+                version control and streamlined workflows.</p>
             </div>
             <div className="flex space-x-3 items-center" data-aos="fade-up">
                 <BiHighlight className="text-light-400 w-7"/>
-                <p className="text-sm">Continuously working on providing back-end solutions to the companys logistic product</p>
+                <p className="text-sm">Optimized application performance, resulting in faster load times and
+                improved user satisfaction.</p>
             </div>
             </div> 
         </div>
@@ -42,19 +46,22 @@ export const Experience = () => {
             <div className="px-5 space-y-3">
             <div className="flex space-x-3 items-center" data-aos="fade-up">
                 <BiHighlight className="text-light-400 w-7"/>
-                <p className="text-sm">Continuously working on providing back-end solutions logistic Continuously working on providing  product</p>
+                <p className="text-sm">Worked with HTML, CSS, JavaScript, PHP, and Laravel to develop
+                interactive web pages.</p>
             </div>
             <div className="flex space-x-3 items-center" data-aos="fade-up">
                 <BiHighlight className="text-light-400 w-7"/>
-                <p className="text-sm">Continuously working on providing back-end solutions to the company logistic product</p>
+                <p className="text-sm">Designed and styled web interfaces using Bootstrap and Tailwind CSS</p>
             </div>
             <div className="flex space-x-3 items-center" data-aos="fade-up">
                 <BiHighlight className="text-light-400 w-7"/>
-                <p className="text-sm">Continuously working on providing back-end solutions to the company logistic product</p>
+                <p className="text-sm">Assisted in creating and debugging back-end solutions, gaining
+                foundational knowledge of MySQL databases.</p>
             </div>
             <div className="flex space-x-3 items-center" data-aos="fade-up">
                 <BiHighlight className="text-light-400 w-7"/>
-                <p className="text-sm">Continuously working on providing back-end solutions to the company logistic product</p>
+                <p className="text-sm">Collaborated with senior developers to deliver high-quality software
+                projects within deadlines.</p>
             </div>
             </div> 
         </div>
