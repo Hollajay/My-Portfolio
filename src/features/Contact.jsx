@@ -1,6 +1,7 @@
 import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 export const Contact = () => {
+  
   const notify = (event) => {
     event.preventDefault(); // Prevent form refresh
     toast.error("The server is currently unavailable. Please try again later.");

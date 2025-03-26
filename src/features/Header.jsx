@@ -38,7 +38,7 @@ export const Header = ({contactRef}) => {
             download 
             className="py-3 px-8 border rounded-lg border-light-400 text-light-400"
           >
-            Download CV
+            Download Cv
           </a>
         </div>
       </div>
