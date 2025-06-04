@@ -21,7 +21,7 @@ export const projectProps = [
         image: tedcillion,
         title: 'Tedcillion',
         details:" The website offers seamless assistance with travel, study, work permits, and personalized tour experiences, ensuring a smooth, hassle-free, and enjoyable journey for all clients.",
-        link: "https://xyzz.tedcillionservices.com/",
+        link: "https://www.tedcillionservices.com/",
         icons: [
             { icon: <Icon type="phpIcon"/> },
             { icon: <Icon type="laravelIcon"/> },
