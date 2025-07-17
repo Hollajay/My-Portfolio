@@ -18,7 +18,7 @@ export const Header = ({contactRef}) => {
           Ologunagba Olajide
         </h1>
         <h1 className="md:text-5xl text-2xl font-bold text-light-300">
-          A web Developer
+          A Frontend Developer
         </h1>
         <p className="lg:pr-40 md:text-xl text- text-light-300 ">
           I am a dedicated Software Engineer with over two years plus of

@@ -2,6 +2,7 @@ import projectimage from '../assets/project.jpg'
 import collegemigration from '../assets/collagemigration.png'
 import tedcillion from '../assets/tedcillion.png'
 import realestate from '../assets/realestate.png'
+import techwavehost from '../assets/techwavehost.png'
 import { Icon } from './Icon'
 
 export const projectProps = [
@@ -45,10 +46,17 @@ export const projectProps = [
         ]
     },
     {
-        image: projectimage,
-        title: 'Coin Render',
-        details:" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, cumque. Itaque repellendus sit ducimus ut tempore pariatur ipsum unde? Eius consequatur",
-        link: "https://my_link.com"
+        image: techwavehost,
+        title: 'Techwavehost',
+        details:" a modern web hosting platform that offers reliable shared hosting, domain registration, and email services. My role involved working on responsive front-end interfaces, improving user experience, and ensuring seamless functionality across the platform.",
+        link: "https://techwavehost.com/",
+        icons: [
+          {icon: <Icon type='htmlIcon' />},
+          {icon: <Icon type='cssIcon' />},
+          {icon: <Icon type='bootstrapIcon' />},
+          {icon: <Icon type='phpIcon'/>}
+          
+        ]
     },
     {
         image: projectimage,
