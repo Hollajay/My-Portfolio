@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 export const formApi = createApi({
   reducerPath: 'form',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'http://localhost:3000',
+    baseUrl: 'https://hincasbackend.onrender.com',
   }),
   endpoints: (builder) => ({
     sendReview: builder.mutation({
