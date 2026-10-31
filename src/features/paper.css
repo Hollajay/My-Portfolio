@@ -152,7 +152,8 @@
 .case-links { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; }
 
 /* Other work */
-.notes { display: grid; grid-template-columns: 5fr 4fr 3fr; gap: 28px; margin-top: 44px; align-items: start; }
+.el-logo { display: inline-block; width: .95em; height: .95em; margin-right: .4em; border-radius: 22%; vertical-align: -.12em; }
+.notes { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 44px; align-items: start; }
 .note { position: relative; display: block; padding: 14px 14px 22px; background: var(--card); color: #1d2433; box-shadow: 0 24px 50px -22px rgba(0,0,0,.8); }
 .note:nth-child(2) { margin-top: 36px; }
 .note img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; margin-bottom: 14px; display: block; }

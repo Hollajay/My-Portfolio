@@ -15,10 +15,13 @@ import { useSendReviewMutation } from "../store/api"
 import { experienceData } from "../component/experienceData"
 import profileimage from "../assets/profile picture.jpg"
 import collegemigration from "../assets/collagemigration.png"
-import tedcillion from "../assets/tedcillion.png"
 import realestate from "../assets/realestate.png"
-import techwavehost from "../assets/techwavehost.png"
 import elandlord from "../assets/e-landlord.png"
+import elandlordLogo from "../assets/e-lanldord real logo.jpeg"
+import tomz from "../assets/Screenshot (1672).png"
+import nlounge from "../assets/Screenshot (1673).png"
+import balogun from "../assets/Screenshot (1674).png"
+import primetime from "../assets/Screenshot (1675).png"
 import logo from "../assets/logo2.png"
 
 const ELANDLORD_IMAGE = elandlord
@@ -34,6 +37,7 @@ const CORE = [
   {
     tag: "Founder",
     title: "e-landlord",
+    logo: elandlordLogo,
     sub: "Property management · Nigeria",
     problem: "Renting in Nigeria runs on agents, cash and paperwork. Tenants overpay fees, landlords chase rent.",
     desc: "e-landlord connects landlords and tenants directly. Landlords list homes, track rent and manage tenants. Tenants find a place, pay and report repairs, without the middlemen.",
@@ -57,12 +61,49 @@ const CORE = [
     caption: "student dashboard",
     r: "2deg",
   },
+  {
+    tag: "Core project",
+    title: "Tomz Fashion Hub",
+    sub: "Bespoke tailoring · Accra, Ghana",
+    problem: "Good tailors grow by word of mouth. Customers can't see styles or prices until they visit the shop.",
+    desc: "A storefront for a tailoring brand in Accra. Customers browse kaftans, agbada, suits, ladies and kids wear with prices, then order on WhatsApp and send their measurements.",
+    stack: ["Next.js", "Vercel"],
+    link: "https://www.tomzfashionhub.com/",
+    linkLabel: "Visit tomzfashionhub.com",
+    image: tomz,
+    caption: "tomz fashion hub",
+    r: "-2deg",
+  },
+  {
+    tag: "Core project",
+    title: "N's Bar & Lounge",
+    sub: "Hospitality · Ibadan, Nigeria",
+    problem: "A venue with a restaurant, bar, hotel and nightly events is hard to explain, and every booking becomes a phone call.",
+    desc: "One home for the whole venue. Guests reserve a table, check the weekly events, explore the hotel and book the Danfo party shuttle.",
+    link: "https://nlounge.vercel.app/",
+    linkLabel: "View live site",
+    image: nlounge,
+    caption: "n's lounge",
+    r: "2.5deg",
+  },
+  {
+    tag: "Core project",
+    title: "Primetime Wellness",
+    sub: "Gym and wellness · Ibadan, Nigeria",
+    problem: "People want to know what a gym offers and what it costs before they make the trip.",
+    desc: "Shows the gym, spa, pool, 5-aside pitch, programmes and membership prices up front, with a virtual tour. Visitors book or join in one tap on WhatsApp.",
+    stack: ["Next.js", "Vercel"],
+    link: "https://primetimewellness.vercel.app/",
+    linkLabel: "View live site",
+    image: primetime,
+    caption: "primetime wellness",
+    r: "-1.5deg",
+  },
 ]
 
 const OTHER_WORK = [
-  { title: "Tedcillion", desc: "Booking and guidance for travel, study and work permits.", link: "https://www.tedcillionservices.com/", img: tedcillion },
+  { title: "Balogun Store", desc: "Building materials catalogue for Ondo State: cement, tiles, roofing and paint, with quotes on WhatsApp.", link: "https://balogunstore.vercel.app/", img: balogun },
   { title: "Xlens Studio", desc: "Galleries and virtual tours for an architecture studio.", link: "https://xlensstudio.onrender.com", img: realestate },
-  { title: "Techwavehost", desc: "Hosting, domains and email for small businesses.", link: "https://techwavehost.com/", img: techwavehost },
 ]
 
 const PIPELINE = [
@@ -187,7 +228,7 @@ const Hero = () => (
             <span key={i} className={`word ${w === "solve" ? "scribble ink" : ""}`} style={{ "--i": i }}>{w}{" "}</span>
           ))}
         </h1>
-        <p>Founder of e-landlord.com.ng<span className="hero-sticker">live</span><br />I turn real problems people face into simple, working software.</p>
+        <p><img className="el-logo" src={elandlordLogo} alt="" />Founder of e-landlord.com.ng<span className="hero-sticker">live</span><br />I turn real problems people face into simple, working software.</p>
         <div className="hero-cta">
           <a href="#work" className="btn">See my products</a>
           <a href="#contact" className="btn ghost">Say hello</a>
@@ -231,7 +272,7 @@ const Work = () => (
       <h2 className="sec-title reveal">Problems I&apos;m <span className="ink">solving</span>.</h2>
       {CORE.map((c, i) => (
         <article key={c.title} className={`case ${i % 2 ? "flip" : ""}`}>
-          <a href={c.link} target="_blank" rel="noopener noreferrer" className="case-media polaroid swing" style={{ "--r": c.r, "--dur": i ? "4.2s" : "3.6s", "--delay": i ? "-1s" : "0s" }}>
+          <a href={c.link} target="_blank" rel="noopener noreferrer" className="case-media polaroid swing" style={{ "--r": c.r, "--dur": `${3.6 + (i % 3) * 0.4}s`, "--delay": `${-i * 0.6}s` }}>
             <span className="pin" />
             {c.image
               ? <img src={c.image} alt={c.title} />
@@ -240,11 +281,11 @@ const Work = () => (
           </a>
           <div className="reveal">
             <span className="dashed-tag">{c.tag}</span>
-            <h3>{c.title}</h3>
+            <h3>{c.logo && <img className="el-logo" src={c.logo} alt="" />}{c.title}</h3>
             <div className="mono sub">{c.sub}</div>
             <p><strong className="accent">The problem:</strong> {c.problem}</p>
             <p>{c.desc}</p>
-            <div className="stack">{c.stack.map((s) => <span key={s}>{s}</span>)}</div>
+            {c.stack && <div className="stack">{c.stack.map((s) => <span key={s}>{s}</span>)}</div>}
             <div className="case-links">
               <a href={c.link} target="_blank" rel="noopener noreferrer" className="ink-link" style={{ fontSize: 22 }}>{c.linkLabel} ↗</a>
             </div>
@@ -302,8 +343,13 @@ const Experience = () => (
         <div className="xp reveal">
           <span className="mono">Present</span>
           <div>
-            <h4>e-landlord</h4>
-            <div className="role">Founder · Lagos</div>
+            <div className="head">
+              <img src={elandlordLogo} alt="" />
+              <div>
+                <h4>e-landlord</h4>
+                <div className="role">Founder · Lagos</div>
+              </div>
+            </div>
             <ul>
               <li>Founded a platform that lets landlords and tenants rent directly.</li>
               <li>Lead product design, frontend, APIs, database and infrastructure.</li>
